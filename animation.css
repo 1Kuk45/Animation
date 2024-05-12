@@ -1,0 +1,88 @@
+div{
+    width: 60px;
+    padding: 30px 30px;
+    text-align: justify;
+    background-color: brown;
+    border-radius: 100px;
+    position: relative;
+    animation-name: ex;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+button{
+    background-color: orange;
+    align-items: center;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    animation-name: eg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@keyframes ex{
+    0%{
+        background-color: rgb(245, 86, 245);
+        transform: rotate(45deg);
+        left: 0px;
+        top: 0px;
+    }
+    20%{
+        background-color: aqua;
+        transform: rotate(-145deg) scale(0.5);
+        left: 1000px;
+        top: 0px;
+    }
+    40%{
+        background-color: bisque;
+        transform: translateX(-100);
+        left: 0px;
+        top: 0px;
+    }
+    60%{
+        background-color: rgb(165, 226, 43);
+        
+        left: 0px;
+        top: 500px;
+    }
+    80%{
+        background-color: rgb(165, 42, 126);
+        left: 1000px;
+        top: 500px;
+    }
+    100%{
+        background-color: rgb(21, 28, 89);
+        left: 1000px;
+        top: 0px;
+    }
+}
+@keyframes eg{
+    10%{
+        background-color: #adadad;
+        transform: rotate(60deg);
+    }
+    20%{
+        background-color: rgb(255, 81, 0);
+        transform: scale(1.5);
+    }
+    30%{
+        background-color: rgb(5, 106, 72);
+        transform: rotate(-120deg) translate(-45);
+    }
+    40%{
+        background-color: rgb(149, 118, 118);
+        transform: scale3d(1.5);
+    }
+    70%{
+        background-color: blue;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    100%{
+        background-color: rgb(13, 247, 60);
+        transition-timing-function: ease-in-out;
+    }
+}
